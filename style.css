@@ -9,6 +9,10 @@
     --transition: .4s ease;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /******animate.style pogledaj sajt********/
 
 body {
@@ -26,7 +30,7 @@ h6 {
 }
 
 .py-5 {
-    padding: 150px 0 !important;
+    padding: 100px 0 !important;
 }
 
 .title h2 {
@@ -215,15 +219,19 @@ nav
     color: var(--black);
 }
 
-.carousel-caption{
+/*********************
+team
+*********************/
+.carousel-caption {
     background: var(--orange);
-    bottom: 90px;
-    left:0px;
-    right: 10px;
-    opacity: .9;
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    opacity: .8;
+    padding: 10px 0;
+}
+#team .row {
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
-#team .row{
-    clip-path: polygon(0 14%, 80% 3%, 100% 38%, 92% 88%, 0 100%);
-}
 
