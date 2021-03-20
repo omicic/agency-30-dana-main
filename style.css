@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Ubuntu:400,700&display=swap');
+
 :root {
     --bela: #fff;
     --orange: rgb(255, 138, 91);
@@ -14,54 +15,69 @@ body {
     font-family: 'Roboto', sans-serif;
     /*color: var(--orange);*/
 }
-h1, h2, h3, h4, h5, h6 {
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: 'Ubuntu', sans-serif;
 }
-.py-5{
-    padding: 150px 0  !important;
+
+.py-5 {
+    padding: 150px 0 !important;
 }
+
 .title h2 {
     font-size: 45px;
     text-transform: uppercase;
     color: var(--orange);
 }
+
 /*********************
 nav
 *********************/
-.navbar{
+.navbar {
     border-top: 5px solid var(--orange);
     background: var(--black);
     padding: 0;
     margin: 0;
 }
+
 .navbar-brand {
     background: var(--orange);
     padding: 15px 40px;
     color: var(--bela);
     text-shadow: 0 0 2px var(--bela);
 }
-.navbar-brand:hover{
-    color:var(--black);
+
+.navbar-brand:hover {
+    color: var(--black);
     text-shadow: 0 0 2px var(--bela);
 }
-.navbar .nav-link{
+
+.navbar .nav-link {
     color: var(--orange);
     font-size: 20px;
     margin: 0 10px;
 
 }
-.navbar .nav-link:hover{
+
+.navbar .nav-link:hover {
     color: var(--moka);
     transition: var(--transition);
 }
+
 /***banner***/
-#banner{
-    background-image: linear-gradient(rgba(0,0,0,.0), rgba(0,0,0,.99)), url(img/banner.jpg);
+#banner {
+    background-image: linear-gradient(rgba(0, 0, 0, .0), rgba(0, 0, 0, .99)), url(img/banner.jpg);
     height: 80vh;
     background-position: center;
     background-size: cover;
     position: relative;
 }
+
 #banner::after {
     content: "";
     width: 100%;
@@ -71,7 +87,7 @@ nav
     transform: skewY(10deg);
     transform-origin: left bottom;
     bottom: 0;
-    z-index:-1
+    z-index: -1
 }
 
 #banner .row {
@@ -79,12 +95,11 @@ nav
     line-height: 5;
 }
 
-#banner .row {
+#banner .row {}
 
-}
-.bannerBtn{
+.bannerBtn {
     background: transparent;
-    color:var(--orange);
+    color: var(--orange);
     border: 2px solid var(--orange);
     text-decoration: none;
     padding: 15px 25px;
@@ -92,59 +107,110 @@ nav
     text-transform: uppercase;
     margin: 20px 20px;
 }
-.bannerBtn:hover{
-text-decoration: none;
-background: var(--orange);
-color: var(--bela);
-transition: var(--transition);
+
+.bannerBtn:hover {
+    text-decoration: none;
+    background: var(--orange);
+    color: var(--bela);
+    transition: var(--transition);
 }
 
 /***bannerIcons***/
-.bannerIcons{
+.bannerIcons {
     margin-top: -100px;
 }
 
-.bannerIcons ul li{
-    background:  var(--orange);
+.bannerIcons ul li {
+    background: var(--orange);
     margin: 0 10px;
     color: var(--bela);
     padding: 10px;
 
-} 
+}
 
-.bannerIcons ul li i{
+.bannerIcons ul li i {
     font-size: 50px;
 }
-.bannerIcons ul li i:hover{
+
+.bannerIcons ul li i:hover {
     transition: var(--transition);
     color: var(--black);
 }
 
 /***serveces***/
-#services{
+#services {
     margin-top: 100px;
 }
 
-#services i{
+#services i {
     font-size: 60px;
     color: var(--bela);
     background: var(--orange);
     padding: 50px;
 }
-#services i:hover{
+
+#services i:hover {
     background: var(--black);
     transition: var(--transition);
 }
-#services .fa-apple{
+
+#services .fa-apple {
     clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
 }
-#services .fa-android{
+
+#services .fa-android {
     clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
 }
-#services .fa-php{
+
+#services .fa-php {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
- 
 }
-#services .fa-js{
+
+#services .fa-js {
     clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+/***contact***/
+#contact {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/contact.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 70vh;
+    clip-path: polygon(0 22%, 100% 0%, 100% 78%, 0% 100%);
+}
+
+#contact .row {
+    height: 40vh;
+}
+
+#contact h2 {
+    color: var(--bela);
+    font-size: 5em;
+    text-transform: uppercase;
+}
+
+#contact input {
+    background: transparent;
+    border: none;
+    border-bottom: 3px solid var(--bela);
+    border-radius: 0;
+    font-size: 2.5em;
+}
+
+#contact button{
+    text-decoration: none;
+    font-size:1.5em;
+    background: transparent;
+    padding: 10px 30px;
+    color: var(--orange);
+    border: 2px solid var(--orange);
+    margin: 0 40px;
+    transition: var(--transition);  
+    text-transform: uppercase;
+    
+}
+#contact button:hover{
+    background: var(--orange);
+    color: var(--black);
 }
