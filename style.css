@@ -350,3 +350,33 @@ team
 #people i:hover {
     color: var(--siva);
 }
+
+/***pricing***/
+#pricing {
+    border-radius: 0;
+}
+
+#pricing .card-title {
+    padding-top: 30px;
+}
+
+.pricenum {
+    position: relative;
+    background: var(--moka);
+    padding: 40px 0;
+}
+
+.pricenum .money {
+    position: absolute;
+    top: 30%;
+    left: 20%;
+    font-size: 2rem;
+}
+
+.pricenum .moneynum {
+    font-size: 4rem;
+}
+
+.pricenum .monyend {
+    font-size: 1rem;
+}
