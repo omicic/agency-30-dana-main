@@ -99,8 +99,6 @@ nav
     line-height: 5;
 }
 
-#banner .row {}
-
 .bannerBtn {
     background: transparent;
     color: var(--orange);
@@ -127,23 +125,29 @@ nav
 .bannerIcons ul li {
     background: var(--orange);
     margin: 0 10px;
-    color: var(--bela);
+    color: var(--moka);
     padding: 10px;
+    transition: var(--transition);
 
 }
 
 .bannerIcons ul li i {
     font-size: 50px;
+    color: var(--black);
+    transition: var(--transition);
 }
 
 .bannerIcons ul li i:hover {
-    transition: var(--transition);
-    color: var(--black);
+    color: var(--orange);
+}
+
+.bannerIcons ul li:hover {
+    background: var(--black);
 }
 
 /***serveces***/
 #services {
-    margin-top: 100px;
+    margin-top: 80px;
 }
 
 #services i {
@@ -236,6 +240,7 @@ team
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
+
 /***about***/
 #about {
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/about-bg.jpg);
@@ -322,6 +327,9 @@ team
     color: var(--siva);
 }
 
+
+
+
 /***peoples***/
 #people .card img {
     border-radius: 50%;
@@ -331,7 +339,7 @@ team
 }
 
 #people .row:nth-child(2) {
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 #people hr {
@@ -423,5 +431,65 @@ footer{
 }
 footer h2,i {
     color: var(--orange);
+}
+
+
+/***********
+responsive
+***********/
+@media(max-width:766px){
+    #banner {
+        height: 90vh;
+    }
+    .bannerIcons {
+        margin-top: -130px;
+    }
+    #services {
+        padding-bottom: 0;
+    }
+    #services .col-md-3{
+        padding-top: 50px
+    }
+    #contact h2 {    
+        font-size: 3rem;
+        text-transform: uppercase;
+    }
+    #contact button {
+        margin-top: 20px;
+    }
+    .carousel-caption h5 {
+       font-size: 2rem;
+    }
+    .carousel-caption {
+        bottom: 35px;
+        opacity: .7;
+        padding: 5px 0;
+    }
+    #team{
+        padding: 50px 0!important;
+    }
+    #about img {
+        width:0%;
+    }
+    .py-5{
+        padding: 50px!important;
+    }
+    #people .card img {
+        border-radius: 50%;
+        width: 80%;
+    }
+
+    #people .row:nth-child(2) {
+        margin-top: 0px!important;
+    }
+    #people .col-md-3{
+        padding: 100px 0;
+    }
+    #pricing .col-md-3{
+        margin: 20px 0;
+    }
+    footer{
+        text-align: center;;
+    } 
 }
 
