@@ -400,4 +400,10 @@ color:var(--bela)
 #pricing .action{
     background: var(--orange);
 }
-]
+footer{
+    background: var(--black);
+    color: var(--bela);
+}
+footer h2,i {
+    color: var(--orange)
+}
