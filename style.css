@@ -9,7 +9,7 @@
     --transition: .4s ease;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -190,7 +190,7 @@ nav
 
 #contact h2 {
     color: var(--bela);
-    font-size: 5em;
+    font-size: 4em;
     text-transform: uppercase;
 }
 
@@ -199,22 +199,23 @@ nav
     border: none;
     border-bottom: 3px solid var(--bela);
     border-radius: 0;
-    font-size: 2.5em;
+    font-size: 1.5em;
 }
 
-#contact button{
+#contact button {
     text-decoration: none;
-    font-size:1.5em;
+    font-size: 1.5em;
     background: transparent;
     padding: 10px 30px;
     color: var(--orange);
     border: 2px solid var(--orange);
     margin: 0 40px;
-    transition: var(--transition);  
+    transition: var(--transition);
     text-transform: uppercase;
-    
+
 }
-#contact button:hover{
+
+#contact button:hover {
     background: var(--orange);
     color: var(--black);
 }
@@ -230,12 +231,13 @@ team
     opacity: .8;
     padding: 10px 0;
 }
+
 #team .row {
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
 }
 
 /***about***/
-#about{
+#about {
     background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url(img/about-bg.jpg);
     background-position: center;
     background-size: cover;
@@ -243,28 +245,108 @@ team
     clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
     padding: 100px 0 200px 0;
 }
-#about img{
+
+#about img {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 50%);
 }
-#about .accordion > .card >.card-header {
-background: var(--orange);
+
+#about .accordion>.card>.card-header {
+    background: var(--orange);
 }
+
 #about .card {
     border: 1px solid --black
 }
-#about .btn-link{
+
+#about .btn-link {
     color: var(--black);
     text-decoration: none;
     font-size: 25px;
 }
-#about .btn-link{
+
+#about .btn-link {
     color: var(--bela);
     text-decoration: none;
 }
-#about  .btn-link::before{
-font-family: "Font Awesome 5 Free";
-font-weight: 900;
-content:"\f0a4"
+
+#about .btn-link::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0a4"
 }
 
+/***projects***/
+#project {
+    padding-top: 50px;
+}
 
+#projects .col-md-3 {
+    padding: 0;
+}
+
+#projects .imgContainer {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7));
+    overflow: hidden;
+
+}
+
+#projects .imgContainer img:hover {
+    opacity: .7;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+#projects .imgContainer:hover .imgIcons {
+    bottom: 0;
+}
+
+#projects .imgIcons {
+    position: absolute;
+    bottom: -10rem;
+    background: linear-gradient(rgba(255, 255, 255, .7), rgba(255, 255, 255, .7));
+    width: 100%;
+    transition-duration: 1s;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#projects i {
+    font-size: 2rem;
+    color: var(--orange);
+    margin: 0 10px;
+    transition: var(--transition);
+}
+
+#projects i:hover {
+    color: var(--siva);
+}
+
+/***peoples***/
+#people .card img {
+    border-radius: 50%;
+    width: 80%;
+    margin: -100px auto 0 auto;
+
+}
+
+#people .row:nth-child(2) {
+    margin-top: 100px;
+}
+
+#people hr {
+    background: var(--orange);
+    border: none;
+    height: 1px;
+}
+
+#people i {
+    font-size: 2rem;
+    color: var(--orange);
+    margin-left: 10px;
+    transition: var(--transition);
+}
+
+#people i:hover {
+    color: var(--siva);
+}
