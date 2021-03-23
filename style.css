@@ -351,6 +351,21 @@ team
     color: var(--siva);
 }
 
+/***skills***/
+#skills {
+    background-image: linear-gradient(rgba(255, 138, 91, .5), rgba(255, 138, 91, .5)), url(img/about-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 90%);
+    padding: 100px 0 100px 0;
+}
+
+.progress-bar{
+    background-color: black;
+
+    }
+
 /***pricing***/
 #pricing {
     border-radius: 0;
@@ -400,6 +415,8 @@ color:var(--bela)
 #pricing .action{
     background: var(--orange);
 }
+
+/***footer***/
 footer{
     background: var(--black);
     color: var(--bela);
@@ -407,3 +424,4 @@ footer{
 footer h2,i {
     color: var(--orange);
 }
+
