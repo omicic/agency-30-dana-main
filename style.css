@@ -380,3 +380,24 @@ team
 .pricenum .monyend {
     font-size: 1rem;
 }
+#pricing .list-group li:first-child{
+    padding-top: 50px;
+}
+#pricing .list-group  .list-group-item{
+    font-size: 1rem;
+}
+#pricing .list-group {
+    border-radius: 0!important;
+}
+#pricing .btn{
+background: var(--orange);
+border-radius: none!important;
+}
+#pricing .btn:hover{
+background: var(--siva);
+color:var(--bela)
+}
+#pricing .action{
+    background: var(--orange);
+}
+]
