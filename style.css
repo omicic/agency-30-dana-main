@@ -94,6 +94,10 @@ nav
     z-index: -1
 }
 
+#banner h2 {
+    color: var(--orange);
+}
+
 #banner .row {
     height: 80vh;
     line-height: 5;
@@ -369,10 +373,10 @@ team
     padding: 100px 0 100px 0;
 }
 
-.progress-bar{
+.progress-bar {
     background-color: black;
 
-    }
+}
 
 /***pricing***/
 #pricing {
@@ -403,33 +407,41 @@ team
 .pricenum .monyend {
     font-size: 1rem;
 }
-#pricing .list-group li:first-child{
+
+#pricing .list-group li:first-child {
     padding-top: 50px;
 }
-#pricing .list-group  .list-group-item{
+
+#pricing .list-group .list-group-item {
     font-size: 1rem;
 }
+
 #pricing .list-group {
-    border-radius: 0!important;
+    border-radius: 0 !important;
 }
-#pricing .btn{
-background: var(--orange);
-border-radius: none!important;
+
+#pricing .btn {
+    background: var(--orange);
+    border-radius: none !important;
 }
-#pricing .btn:hover{
-background: var(--siva);
-color:var(--bela)
+
+#pricing .btn:hover {
+    background: var(--siva);
+    color: var(--bela)
 }
-#pricing .action{
+
+#pricing .action {
     background: var(--orange);
 }
 
 /***footer***/
-footer{
+footer {
     background: var(--black);
     color: var(--bela);
 }
-footer h2,i {
+
+footer h2,
+i {
     color: var(--orange);
 }
 
@@ -437,59 +449,119 @@ footer h2,i {
 /***********
 responsive
 ***********/
-@media(max-width:766px){
+@media(max-width:766px) {
     #banner {
-        height: 90vh;
+        height: 80vh;
     }
+
+    #banner h1 {
+        font-size: 3rem;
+    }
+
     .bannerIcons {
-        margin-top: -130px;
+        /* margin-top: -100px; */
     }
+
+    .bannerBtn {
+        font-size: 1.5rem;
+        padding: 10px 15px;
+        text-transform: uppercase;
+    }
+
+
+    .bannerIcons ul li {
+        margin: 0 5px;
+        padding: 5px;
+        transition: var(--transition);
+
+    }
+
+    .bannerIcons ul li i {
+        font-size: 2rem;
+        color: var(--black);
+        transition: var(--transition);
+    }
+
+    .bannerIcons ul li p {
+        font-size: .7rem;
+    }
+
     #services {
         padding-bottom: 0;
     }
-    #services .col-md-3{
+
+    #services .col-md-3 {
         padding-top: 50px
     }
-    #contact h2 {    
-        font-size: 3rem;
+
+    h2 {
+        font-size: 2rem;
         text-transform: uppercase;
     }
+
+    #contact h2 {
+        font-size: 2rem;
+        padding-top: 50px;
+    }
+
     #contact button {
-        margin-top: 20px;
+
+        font-size: 1.5rem;
+        padding: 10px 20px;
+        text-align: justify;
+        margin: 10px 0;
     }
+
     .carousel-caption h5 {
-       font-size: 2rem;
+        font-size: 1rem;
     }
+
     .carousel-caption {
-        bottom: 35px;
-        opacity: .7;
+        bottom: 0px;
+        opacity: .8;
         padding: 5px 0;
     }
-    #team{
-        padding: 50px 0!important;
+
+    #team {
+        padding: 50px 0 !important;
     }
+
     #about img {
-        width:0%;
+        width: 0%;
     }
-    .py-5{
-        padding: 50px!important;
+
+    #about .card-header h2 {
+        font-size: 1.5rem;
     }
+
+    #about .card-header .btn {
+        padding: 0 0;
+    }
+
+
+    .py-5 {
+        padding: 50px !important;
+    }
+
     #people .card img {
         border-radius: 50%;
         width: 80%;
     }
 
     #people .row:nth-child(2) {
-        margin-top: 0px!important;
+        margin-top: 0px !important;
     }
-    #people .col-md-3{
+
+    #people .col-md-3 {
         padding: 100px 0;
     }
-    #pricing .col-md-3{
+
+    #pricing .col-md-3 {
         margin: 20px 0;
     }
-    footer{
-        text-align: center;;
-    } 
-}
 
+    footer {
+        text-align: center;
+        ;
+    }
+}
